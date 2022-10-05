@@ -1,0 +1,15 @@
+
+.name{
+    color: red;
+    margin-left: 30px;
+}
+
+.address{
+    color:green;
+    margin-left: 18px;
+}
+
+.city{
+    color: blue;
+    margin-left: 50px;
+}

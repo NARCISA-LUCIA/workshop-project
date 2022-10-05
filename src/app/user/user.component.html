@@ -1,0 +1,8 @@
+<ul>
+    <h3>Users</h3>
+    <li *ngFor="let user of users">
+        <div class="firstName">First Name: {{user.firstName}}</div>
+        <div class="lastName">Last Name: {{user.lastName}}</div>
+        <button mat-raised-button (click)="openDialog(user)">Show user</button>
+    </li>
+</ul>

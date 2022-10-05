@@ -1,0 +1,5 @@
+<h4>Do you want to close the feature: <span>{{data.feature.title}}</span> ?</h4>
+<div mat-dialog-actions>
+    <button mat-raised-button (click)="onClose()">Close</button>
+    <button mat-raised-button color="warn" [mat-dialog-close]="data">Delete</button>
+</div>

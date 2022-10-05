@@ -1,0 +1,17 @@
+<ul>
+    <h3>Companies</h3>
+    <!-- <div>Companies length = {{companies.length}}</div>
+    <div>company = {{company.name}}</div> -->
+    <li *ngFor="let company of companies">
+        <div class="title-name">Name:
+            <span class="name">{{company.name}}</span>
+        </div>
+        <div class="title-address">Address:
+            <span class="address">{{company.address}}</span>
+            <div class="title-address">City:
+                <span class="city">{{company.city}}</span>
+            </div>
+        </div>
+        <button mat-raised-button (click)="openDialog(company)">Show company</button>
+    </li>
+</ul>

@@ -1,0 +1,6 @@
+<h4>Do you want to open de project: <span>{{data.project.name}}</span> ?</h4>
+<h4>Do you want to open description: <span>{{data.project.description}}</span> ?</h4>
+<div mat-dialog-actions>
+    <button mat-raised-button (click)="onClose()">Close</button>
+    <button mat-raised-button color="warn" [mat-dialog-close]="data">Delete</button>
+</div>

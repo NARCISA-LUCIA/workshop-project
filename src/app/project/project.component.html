@@ -1,0 +1,12 @@
+<ul>
+    <h3>Projects</h3>
+    <li *ngFor="let project of projects">
+        <div class="name">Name:
+            <span class="title-name">{{project.name}}</span>
+        </div>
+        <div class="description">Description:
+            <span class="title-description">{{project.description}}</span>
+        </div>
+        <button mat-raised-button (click)="openDialog(project)">Show project</button>
+    </li>
+</ul>

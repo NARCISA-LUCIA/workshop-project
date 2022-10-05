@@ -1,0 +1,8 @@
+<ul>
+    <h3>Features</h3>
+    <li *ngFor="let feature of features">
+        <div class="title">Title: <span class = "title-name">{{feature.title}}</span></div>
+        <div class="description">Description: {{feature.description}}</div>
+        <button mat-raised-button (click)="openDialog(feature)">Show feature</button>
+    </li>
+</ul>
